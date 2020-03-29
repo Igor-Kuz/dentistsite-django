@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Set an Appointmento see Dr. Igor K {% endblock %}
-{% block meta_description %} This is  Dr. Igor K website {% endblock %}
+{% block title %}Set an Appoinment to See Dr. Elder{%endblock %}
+{% block meta_description %}Appointment{% endblock %}
 
 {% block content %}
 
@@ -31,40 +31,29 @@
   </div>
   <!-- ***** Breadcrumb Area End ***** -->
   
+
+
   <!-- ***** Contact Area Start ***** -->
-    <!-- ***** Contact Area End ***** -->
-<center>
-	<h1>Review Your information:</h1>
-	<strong>Your Name: </strong>{{your_name}}</br>
-	<strong>Phone:</strong>{{your_phone}}</br>
-	<strong>Email:</strong>>{{your_email}}</br>
-	<strong>Address:</strong>{{your_address}}</br>
-	<strong>When:</strong>>{{your_scheldule}}</br>
-	<strong>Appointment</strong>>{{your_date}}</br>
-	<strong>Your Message:</strong>>{{your_message}}</br>
+ 
+ <center>
+ 	<h1>Review Your Information:</h1>
+	<strong>Your Name: </strong>{{your_name}}<br/>
+	<strong>Phone: </strong>{{your_phone}}<br/>
+	<strong>Email: </strong>{{your_email}}<br/>
+	<strong>Address: </strong>{{your_address}}<br/>
+	<strong>When: </strong>{{your_schedule}}<br/>
+	<strong>Appointment Day: </strong>{{your_date}}<br/>
+	<strong>Your Message: </strong>{{your_message}}<br/>
 
 
-</br></br>
-<strong>Note:</strong> We will contact you shortly via telephone to confirm your appointment
+<br/><br/>
+<strong>Note: </strong> This appointment hasn't been set yet. We will contact you shortly via telephone to confirm your appointment.
 
 </center>
+<br/><br/><br/><br/>
+  <!-- ***** Contact Area End ***** -->
 
- </br> </br></br></br>
 {% endblock %}
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

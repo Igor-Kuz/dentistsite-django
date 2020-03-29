@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
 {% block content %}
 
 
@@ -16,12 +17,12 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
+                <h2 data-animation="fadeInUp" data-delay="100ms">My Name Is John Elder and I'm The Greatest Darn Dentist Who Ever Lived!! That's Right!</h2>
                 <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                   offer you.</p>
                 <div class="welcome-btn-group">
-                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
-                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2" data-animation="fadeInUp" data-delay="500ms">Get Started</a>
+                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInUp" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -40,8 +41,8 @@
                 <p data-animation="fadeInDown" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                   offer you.</p>
                 <div class="welcome-btn-group">
-                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
-                  <a href="{% url 'contact' %}" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
+                  <a href="#" class="btn dento-btn mx-2" data-animation="fadeInDown" data-delay="500ms">Get Started</a>
+                  <a href="#" class="btn dento-btn mx-2 active" data-animation="fadeInDown" data-delay="700ms">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -59,7 +60,7 @@
         <!-- About Us Thumbnail -->
         <div class="col-12 col-md-6">
           <div class="about-us-thumbnail mb-50">
-            <img src="{% static 'website/img/bg-img/15.jpg' %}" alt="">
+            <img src="{% static 'website/img/bg-img/dentist.jpg' %}" alt="">
           </div>
         </div>
         <!-- About Content -->
@@ -222,7 +223,7 @@
         <!-- Video Area -->
         <div class="col-12 col-lg-6">
           <div class="dento-video-area mb-100">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ju44UhH-Pfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l0-sgoIUviQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -335,9 +336,9 @@
 
       <div class="row">
         <div class="col-12">
-          <!-- Appointment Form -->  
+          <!-- Appointment Form -->
           <div class="appointment-form">
-            <form action="{% url 'appointment'%}" method="post">
+            <form action="{% url 'appointment' %}" method="post">
               {% csrf_token %}
               <div class="row">
                 <div class="col-md-6">
@@ -362,8 +363,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <select name="your-scheldule" class="form-control">
-                      <option value="First choose your appointment time">First choose your appointment time</option>       <option value="9 AM to 10 AM">9 AM to 10 AM</option>
+                    <select name="your-schedule" class="form-control">
+                      <option value="First Choice Appoinment Time">First Choice Appoinment Time</option>
+                      <option value="9 AM to 10 AM">9 AM to 10 AM</option>
                       <option value="11 AM to 12 PM">11 AM to 12 PM</option>
                       <option value="2 PM to 4 PM">2 PM to 4 PM</option>
                       <option value="8 PM to 10 PM">8 PM to 10 PM</option>
@@ -373,12 +375,12 @@
                 <div class="col-md-6">
                   <div class="form-group mb-30">
                     <select name="your-date" class="form-control">
-                      <option value="Choice Your Date">Choice Your Date</option>
+                      <option value="Choose Your Date">Choose Your Date</option>
                       <option value="Monday">Monday</option>
                       <option value="Tuesday">Tuesday</option>
                       <option value="Wednesday">Wednesday</option>
-                      <option value="Thursday">Thursday/option>
-                      <option value="Friday">Friday/option>  
+                      <option value="Thursday">Thursday</option>
+                      <option value="Friday">Friday</option>
                     </select>
                   </div>
                 </div>
@@ -495,8 +497,8 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>вЂњI'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.вЂќ</h5>
+                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>
                 <h6>Arron Ramsey</h6>
                 <p>Dental Patient</p>
               </div>
@@ -510,8 +512,8 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>вЂњI'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.вЂќ</h5>
+                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>
                 <h6>Arron Ramsey</h6>
                 <p>Dental Patient</p>
               </div>
@@ -525,8 +527,8 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>вЂњI'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.вЂќ</h5>
+                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
+                  very helpful. Excellent treatment and advice.”</h5>
                 <h6>Arron Ramsey</h6>
                 <p>Dental Patient</p>
               </div>
@@ -610,6 +612,5 @@
   </section>
   <!-- ***** Blog Area End ***** -->
 
-{% endblock %}
-
-  
+ 
+ {% endblock %}
