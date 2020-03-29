@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
+import dj_database_url
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.White.Noise.Middleware',
 ]
 
 ROOT_URLCONF = 'dentist.urls'
@@ -125,6 +129,8 @@ STATICFILES_DIRS = [
 ]
 
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 #email settings
 EMAIL_HOST = 'smtp.gmail.com' #'localhost' команда теста python -m smtpd -n -c DebbuggingServer localhost:1025
 EMAIL_PORT =  587 # for real 587 #'1025'
@@ -138,3 +144,6 @@ EMAIL_USE_TLS = True #False for test
 # myaccount.google.com/lesssecureapps
 # accounts.google.com/DisplayUnlockCaptcha
 # myaccount.google.com/apppasswords
+
+
+django_heroku.settings(locals())
