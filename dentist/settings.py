@@ -167,7 +167,7 @@ SECRET_KEY = '=c_^67@&4il)k1r!#7uwygqk@xbx14f2sz*z5=-mc@05nm6bwa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['polar-journey-10064.herokuapp.com''www.polar-journey-10064.herokuapp.com', '*']
 
 
 # Application definition
