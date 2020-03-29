@@ -26,10 +26,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@t9%(ux=u84!ow@lz0&odm@s*t9lwk@-w8r^0sd9wot@1%zz-$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False #True
+DEBUG =  True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'polar-journey-10064', '*']
-
+ALLOWED_HOSTS = [] #'127.0.0.1', 'localhost', 'polar-journey-10064', 'www.polar-journey-10064.herokuapp.com' '*'
+ 
 
 # Application definition
 
