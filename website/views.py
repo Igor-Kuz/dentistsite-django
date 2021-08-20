@@ -51,7 +51,7 @@ def appointment(request):
 			'Appointment Request', # subject
 			appointment, # message
 			your_email, # from email
-			['john@codemy.com'], # To Email
+			['drIgorK@gmail.com'], # To Email
 			)
 		
 		return render(request, 'appointment.html', {
@@ -68,11 +68,7 @@ def appointment(request):
 		return render(request, 'home.html', {})
 
 '''
-from django.shortcuts import render
-from django.core.mail import send_mail
 
-def index(request):
-	return render(request, 'index.html', {})
 
 def contact(request):
 	if request.method == "POST":
@@ -93,15 +89,6 @@ def contact(request):
 
 	else: 
 		return render(request, 'contact.html', {})
-
-def about(request):
-	return render(request, 'about.html', {})
-
-def pricing(request):
-	return render(request, 'pricing.html', {})	
-
-def service(request):
-	return render(request, 'service.html', {})
 
 
 def appointment(request):
