@@ -1,5 +1,4 @@
-# Dental clinic website where you can book visit to your doctor
-https://polar-journey-10064.herokuapp.com/
+# Dental clinic website. 
 
 Site allows to send email via gmail
 
