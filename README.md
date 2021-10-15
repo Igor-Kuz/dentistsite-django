@@ -1,6 +1,7 @@
 # Dental clinic website. 
+Сайт стоматологической клиники созданный на базе фреймворка
+Django.
 
-Site allows to send email via gmail
 
 Инструменты разработки Стек:
 
@@ -11,26 +12,33 @@ Site allows to send email via gmail
 3)sqlite3
 
 
-# Разработка
+## Разработка
 
-1)Клонировать репозиторий через git clone 
-2)Создать виртуальное окружение python -m venv venv
-3)Активировать виртуальное окружение
-4)Устанавливить зависимости: pip install -r reqirements.txt
-5)Настройка Gmail
-# Email Settings
-# myaccount.google.com/lesssecureapps
-# accounts.google.com/DisplayUnlockCaptcha
-# myaccount.google.com/apppasswords
+##### 1) Открыть терминал или консоль и перейти в нужную Вам директорию
 
-EMAIL_HOST = 'smtp.gmail.com'
+##### 2) Клонировать репозиторий и поставить звездочку)
 
-EMAIL_PORT = 587
+    git clone https://github.com/Igor-Kuz/dentistsite-django.git
 
-EMAIL_HOST_USER = 'youraccount@gmail.com'
+##### 3) Создать виртуальное окружение
 
-EMAIL_HOST_PASSWORD = ''
+    python -m venv venv
+    
+##### 3) Активировать виртуальное окружение
 
-EMAIL_USE_TLS = True
 
-5)Запустить сервер python manage.py runserver
+##### 4 ) Устанавливить зависимости:
+
+    pip install -r reqirements.txt
+
+##### 7) Выполнить миграции
+
+
+##### 8) В файле settings.py указать нужные данные для отправки электронной почтыв соотвествующем разделе
+   
+    
+##### 8) Запустить сервер
+
+    python manage.py runserver
+
+
