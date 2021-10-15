@@ -1,6 +1,8 @@
 ## Dental clinic website. 
 ## Сайт стоматологической клиники созданный на базе фреймворка Django.
 
+**Ссылка**:
+- [Сайт](https://fathomless-eyrie-02360.herokuapp.com/)
 
 ### Инструменты разработки
  
