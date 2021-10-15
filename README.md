@@ -1,5 +1,6 @@
 ## Dental clinic website. 
 ## Сайт стоматологической клиники созданный на базе фреймворка Django.
+[![Build Status](https://app.travis-ci.com/Igor-Kuz/dentistsite-django.svg?branch=master)](https://app.travis-ci.com/Igor-Kuz/dentistsite-django)
 
 **Ссылка**:
 - [Сайт](https://fathomless-eyrie-02360.herokuapp.com/)
